@@ -1,0 +1,78 @@
+.footer {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  padding: 3rem 0 3rem;
+
+  &> * {
+    font-size: 1.3rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 20px;
+
+    h3.line {
+      position: relative;
+
+      &:before {
+        position: absolute;
+        left: -50px;
+        top: 50%;
+
+        display: block;
+        content: "";
+        width: 40px;
+        height: 1px;
+        background: var(--logo);
+      }
+    }
+  }
+
+  &__social {
+    margin-top: 3rem;
+
+    a {
+      margin-right: 1rem;
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    padding-top: 3rem;
+  }
+
+  a:hover {
+    color: var(--blue);
+
+    svg circle {
+      fill: var(--blue);
+    }
+  }
+
+  h3 {
+    margin-bottom: 1rem;
+  }
+}
+
+.type {
+  border-right: 1px solid white;
+  animation: cursor 1s infinite step-end, typing 9s infinite steps(5);
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: 1px;
+}
+
+@keyframes typing {
+  0%{ width: 0ch} /*Text is hidden*/
+  30%{ width: 6ch;} /*The enitre header will be typed out 1 character at a time*/
+  80%{ width: 6ch;} /*Text stays visible*/
+  90%{ width: 0ch;} /*Text is deleted*/
+  100%{ width: 0ch;} /*Text stays hidden*/
+}
+
+@keyframes cursor {
+  0%, 100%{border-color: transparent;}
+  50%{border-color: white;}
+}
+

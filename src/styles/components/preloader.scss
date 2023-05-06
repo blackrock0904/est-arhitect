@@ -1,0 +1,59 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--eerie-black);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+  transition-delay: 3s;
+
+  & .logo {
+    width: 200px;
+    height: 200px;
+
+    & path {
+      animation: stroke 3s infinite alternate;
+      stroke-width: 2;
+      stroke: rgba(32, 33, 39, .8);
+    }
+  }
+
+  &.loaded {
+    opacity: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+}
+
+@keyframes stroke {
+  0% {
+    fill: rgba(32, 33, 39, 0);
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+
+  70% {
+    fill: rgba(32, 33, 39, 0);
+    stroke: rgba(32, 33, 39, .7);
+  }
+
+  80% {
+    fill: rgba(32, 33, 39, 0);
+    stroke: rgba(32, 33, 39, .8);
+    stroke-width: 3;
+  }
+
+  100% {
+    fill: rgba(32, 33, 39, 1);
+    stroke: rgba(32, 33, 39, 1);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 4;
+  }
+}

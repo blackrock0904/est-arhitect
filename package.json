@@ -1,0 +1,41 @@
+{
+  "name": "estarchitect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valeryiay/estarchitect.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valeryiay/estarchitect/issues"
+  },
+  "homepage": "https://github.com/valeryiay/estarchitect#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^9.1.2",
+    "babel-preset-latest": "^6.24.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-html-prettify": "^0.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "saas": "^1.0.0",
+    "webpack": "^5.82.0",
+    "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "sass": "^1.62.1"
+  }
+}

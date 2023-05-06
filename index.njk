@@ -1,0 +1,124 @@
+{% extends "src/templates/base/base.njk" %}
+
+{% block preloader %}
+{% include "./src/templates/preloader.njk" %}
+{% endblock %}
+
+{% block content %}
+    <main>
+        <article>
+            <section class="section-hero" id="section-hero" aria-label="home">
+                <div class="section-hero__bg-slider" data-src="static/img/fullscreen-slider/cam_001.jpg"></div>
+                <div class="section-hero__bg-slider" data-src="static/img/fullscreen-slider/cam_3.jpg"></div>
+                <div class="section-hero__bg-slider" data-src="static/img/fullscreen-slider/cam_4.jpg"></div>
+                <div class="hero-content">
+                    <div class="container">
+                        <div class="hero-animate">
+                            <h1 class="h1 hero-title">Est.<br>Architect</h1>
+                            <p class="hero-subtitle">The art of harmony, beauty & function</p>
+                        </div>
+                        <p class="hero-subtitle">Interior design & architecture. Based in Montenegro</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="service" id="service" aria-labelledby="service-label">
+                <div class="container">
+                    <div class="title-wrapper">
+                        <div>
+                            <p class="section-subtitle">Services That We Provide</p>
+                            <h2 class="h2 section-title" id="service-label">Services</h2>
+                        </div>
+                        <p class="section-text">Phasellus et lacus suscipit congue nisl the volutpat magna. donec miss the drana risus tincidunt convallis velit orci congue tortor eu dignissim ipsum suam non odio. Pellenta esuntion miss the imperdiet metus ornare.</p>
+                    </div>
+
+                    <div class="service__list">
+                        <div class="service-card">
+                            <h3 class="h3 card-title">2D-plan</h3>
+                            <p class="card-text">Website ravida surna eveti semen the conse tusio anivite dianne one nivam acestion vue artin dictum.Customized 3D and 2D floor plans are becoming a classic way of presentation in real estate. They easily orient on the floors and convey the layout of the building as a whole. We produce 2D and 3D plans in record time to help your clients get a clearer picture of the property.</p>
+                            <span class="text-lg card-number">03</span>
+                            <a href="#" class="layer-link" aria-label="More about my 2D-plan service"></a>
+                        </div>
+                        <div class="service-card">
+                            <h3 class="h3 card-title">3D visualization</h3>
+                            <p class="card-text">Customized 3D and 2D floor plans are becoming a classic way of presentation in real estate. They easily orient on the floors and convey the layout of the building as a whole. We produce 2D and 3D plans in record time to help your clients get a clearer picture of the property.</p>
+                            <span class="text-lg card-number">04</span>
+                            <a href="#" class="layer-link" aria-label="More about my 3D visualization service"></a>
+                        </div>
+                        <div class="service-card">
+                            <h3 class="h3 card-title">Exterior preparation</h3>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, culpa voluptatum cum inventore blanditiis nihil dolore unde ab sequi omnis deleniti magnam quaerat similique deserunt modi excepturi saepe, nam vel.</p>
+                            <span class="text-lg card-number">05</span>
+                            <a href="#" class="layer-link" aria-label="More about Exterior preparation service"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="portfolio" aria-labelledby="portfolio-label">
+                <div class="title-wrapper container">
+                    <div>
+                        <p class="section-subtitle" id="portfolio-label">Our Works</p>
+                        <h2 class="h2 section-title">Story<br/>book</h2>
+                    </div>
+                    <p class="section-text">Phasellus et lacus suscipit congue nisl the volutpat magna. donec miss the drana risus tincidunt convallis velit orci congue tortor eu dignissim ipsum suam non odio. Pellenta esuntion miss the imperdiet metus ornare.</p>
+                </div>
+
+                <div class="portfolio__carousel">
+                    <div class="portfolio__carousel-list">
+                        <div class="portfolio__carousel-item">
+                            <a href="#">
+                                <img src="static/img/slider/portfolio-1.jpg" alt="portfolio 1" />
+                                <div class="portfolio__carousel-content">
+                                    <h3>Belvedere penthouse</h3>
+                                    <p>Interior design-project | Architectural project</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="portfolio__carousel-item">
+                            <a href="#">
+                                <img src="static/img/slider/portfolio-2.jpg" alt="portfolio 2" />
+                                <div class="portfolio__carousel-content">
+                                    <h3>Belvedere penthouse</h3>
+                                    <p>Interior design-project | Architectural project</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="portfolio__carousel-item">
+                            <a href="#">
+                                <img src="static/img/slider/portfolio-3.jpg" alt="portfolio 3" />
+                                <div class="portfolio__carousel-content">
+                                    <h3>Belvedere penthouse</h3>
+                                    <p>Interior design-project | Architectural project</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="portfolio__carousel-item">
+                            <a href="#">
+                                <img src="static/img/slider/portfolio-4.jpg" alt="portfolio 4" />
+                                <div class="portfolio__carousel-content">
+                                    <h3>Belvedere penthouse</h3>
+                                    <p>Interior design-project | Architectural project</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio__carousel-controls">
+                        <svg class="portfolio__btn-left" xmlns="http://www.w3.org/2000/svg" width="16" height="16" id="arrow">
+                            <path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal"
+                                  fill="#34485c" fill-rule="evenodd"
+                                  d="m-930.94 919.655-.706.707-5.354-5.353 5.354-5.354.707.707-4.647 4.647 4.647 4.646z"
+                                  color="#000" font-family="sans-serif" font-weight="400" overflow="visible"
+                                  transform="translate(942 -906.362)"></path>
+                        </svg>
+                        <svg class="portfolio__btn-right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" id="arrow">
+                            <path d="M5.715 3 5 3.7 9.656 8.44 5 13.186l.715.699 5.344-5.444L5.715 3z" fill="#34485c" fill-rule="evenodd"
+                                  font-family="sans-serif" font-weight="400" overflow="visible"
+                                  style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;white-space:normal;isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1"></path>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+{% endblock %}
