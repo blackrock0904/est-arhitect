@@ -17,6 +17,10 @@
   transition: color 0.3s ease;
 }
 
+#menuToggle a.active {
+  color: var(--blue);
+}
+
 #menuToggle a:hover {
   color: var(--blue);
 }

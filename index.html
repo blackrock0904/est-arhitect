@@ -8,9 +8,9 @@
     <title>Est.Architect</title>
     <meta name="title" content="Est.Architect">
     <meta name="description" content="Est.Architect">
-    <link rel="shortcut icon" href="./static/img/logo/logo.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="/static/img/logo/logo.svg" type="image/svg+xml">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-    <link rel="stylesheet" type="text/css" href="./gen/css/styles.min.css">
+    <link rel="stylesheet" type="text/css" href="/gen/css/styles.min.css">
 </head>
 
 <body>
@@ -44,18 +44,14 @@
                     <span></span>
                     <span></span>
                     <ul id="menu">
-                        <a href="/">
-                            <li>Home</li>
-                        </a>
-                        <a href="/page/services">
-                            <li>Services</li>
-                        </a>
-                        <a href="/page/projects">
-                            <li>Projects</li>
-                        </a>
-                        <a href="/page/contacts">
-                            <li>Contact</li>
-                        </a>
+                        <li><a class="active" href="/">Home</a>
+                        </li>
+                        <li><a href="/page/services">Services</a>
+                        </li>
+                        <li><a href="/page/projects">Projects</a>
+                        </li>
+                        <li><a href="/page/about">About us</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -118,24 +114,22 @@
 
                     <div class="service__list">
                         <div class="service-card">
-                            <h3 class="h3 card-title">2D-plan</h3>
-                            <p class="card-text">Website ravida surna eveti semen the conse tusio anivite dianne one nivam acestion vue artin dictum.Customized 3D and 2D floor plans are becoming a classic way of presentation in real estate. They easily orient on the floors
-                                and convey the layout of the building as a whole. We produce 2D and 3D plans in record time to help your clients get a clearer picture of the property.</p>
+                            <h3 class="h3 card-title">Дизайн интерьера</h3>
+                            <p class="card-text">Воплощаем ваши мечты об идеальном интерьере.</p>
+                            <span class="text-lg card-number">01</span>
+                            <a href="page/services" class="layer-link" aria-label="More about my 2D-plan service"></a>
+                        </div>
+                        <div class="service-card">
+                            <h3 class="h3 card-title">Архитектура</h3>
+                            <p class="card-text">Проектируем пространства для жизни и бизнеса.</p>
+                            <span class="text-lg card-number">02</span>
+                            <a href="page/services" class="layer-link" aria-label="More about my 3D visualization service"></a>
+                        </div>
+                        <div class="service-card">
+                            <h3 class="h3 card-title">3D-визуализации и 2D планы</h3>
+                            <p class="card-text">Помогаем презентовать ваш объект недвижимости в лучшем виде.</p>
                             <span class="text-lg card-number">03</span>
-                            <a href="#" class="layer-link" aria-label="More about my 2D-plan service"></a>
-                        </div>
-                        <div class="service-card">
-                            <h3 class="h3 card-title">3D visualization</h3>
-                            <p class="card-text">Customized 3D and 2D floor plans are becoming a classic way of presentation in real estate. They easily orient on the floors and convey the layout of the building as a whole. We produce 2D and 3D plans in record time to help
-                                your clients get a clearer picture of the property.</p>
-                            <span class="text-lg card-number">04</span>
-                            <a href="#" class="layer-link" aria-label="More about my 3D visualization service"></a>
-                        </div>
-                        <div class="service-card">
-                            <h3 class="h3 card-title">Exterior preparation</h3>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, culpa voluptatum cum inventore blanditiis nihil dolore unde ab sequi omnis deleniti magnam quaerat similique deserunt modi excepturi saepe, nam vel.</p>
-                            <span class="text-lg card-number">05</span>
-                            <a href="#" class="layer-link" aria-label="More about Exterior preparation service"></a>
+                            <a href="page/services" class="layer-link" aria-label="More about Exterior preparation service"></a>
                         </div>
                     </div>
                 </div>
@@ -153,7 +147,7 @@
                 <div class="portfolio__carousel">
                     <div class="portfolio__carousel-list">
                         <div class="portfolio__carousel-item">
-                            <a href="#">
+                            <a href="page/projects">
                                 <img src="static/img/slider/portfolio-1.jpg" alt="portfolio 1" />
                                 <div class="portfolio__carousel-content">
                                     <h3>Belvedere penthouse</h3>
@@ -162,7 +156,7 @@
                             </a>
                         </div>
                         <div class="portfolio__carousel-item">
-                            <a href="#">
+                            <a href="page/projects">
                                 <img src="static/img/slider/portfolio-2.jpg" alt="portfolio 2" />
                                 <div class="portfolio__carousel-content">
                                     <h3>Belvedere penthouse</h3>
@@ -171,7 +165,7 @@
                             </a>
                         </div>
                         <div class="portfolio__carousel-item">
-                            <a href="#">
+                            <a href="page/projects">
                                 <img src="static/img/slider/portfolio-3.jpg" alt="portfolio 3" />
                                 <div class="portfolio__carousel-content">
                                     <h3>Belvedere penthouse</h3>
@@ -269,7 +263,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="text/javascript" src="./gen/js/scripts.min.js" />
+    <script type="text/javascript" src="/gen/js/scripts.min.js" />
 </body>
 
 </html>

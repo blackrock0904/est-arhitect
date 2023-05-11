@@ -12,6 +12,10 @@
   transition: 0.5s ease;
   transition-delay: 3s;
 
+  &.hidden {
+    display: none;
+  }
+
   & .logo {
     width: 200px;
     height: 200px;

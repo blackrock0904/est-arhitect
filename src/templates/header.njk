@@ -1,4 +1,4 @@
-<header class="header{% if headerdark %} header--dark{% endif %}" id="header">
+<header class="header{% if headerdark %} header--dark header--blur{% endif %}" id="header">
     <div class="header__container">
         <nav role="navigation" class="header__nav">
             <div id="menuToggle">
@@ -7,24 +7,16 @@
                 <span></span>
                 <span></span>
                 <ul id="menu">
-                    <a href="/">
-                        <li>Home</li>
-                    </a>
-                    <a href="/page/services">
-                        <li>Services</li>
-                    </a>
-                    <a href="/page/projects">
-                        <li>Projects</li>
-                    </a>
-                    <a href="/page/contacts">
-                        <li>Contact</li>
-                    </a>
+                    <li><a {% if active == "home" %} class="active" {% endif %} href="/">Home</a></li>
+                    <li><a {% if active == "services" %} class="active" {% endif %} href="/page/services">Services</a></li>
+                    <li><a {% if active == "projects" %} class="active" {% endif %} href="/page/projects">Projects</a></li>
+                    <li><a {% if active =="about" %} class="active" {% endif %} href="/page/about">About us</a></li>
                 </ul>
             </div>
         </nav>
         <div class="header__logo">
             {% if headerdark %}
-                <img src="./static/img/logo/logo.svg" alt="Est.Architect">
+                <img src="/static/img/logo/logo.svg" alt="Est.Architect">
             {% else %}
                 <img src="./static/img/logo/logo_colored.svg" alt="Est.Architect">
             {% endif %}
