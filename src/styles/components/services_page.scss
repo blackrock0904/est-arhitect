@@ -38,15 +38,31 @@
           top: 50%;
         }
 
-        &:hover:after {
-          display: block;
-          content: "";
+        &:hover:before {
+          width: 4rem;
+          left: -5rem;
+        }
+
+        &:hover {
+          .services__section-hint {
+            opacity: 1;
+          }
+        }
+
+        .services__section-hint {
+          opacity: 0;
           position: absolute;
-          width: 0.5rem;
-          height: 1px;
-          background: rgba(0,0,0,0.3);
-          left: -5.1rem;
+          width: 25rem;
+          height: auto;
+          z-index: 1;
+          padding: 2rem;
+          border-radius: 3px 0 3px 3px;
+          border: 1px solid rgba(0,0,0,0.3);
+          background-color: white;
+          left: -30rem;
           top: 50%;
+          transform: translateY(-50%);
+          transition: all 0.1s linear;
         }
       }
     }

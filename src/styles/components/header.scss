@@ -22,6 +22,13 @@
         }
       }
     }
+
+    .header__lng {
+      color: var(--roman-silver);
+      &:hover {
+        color: var(--blue);
+      }
+    }
   }
 
   &.header--blur {
@@ -41,11 +48,22 @@
   }
 
   &__lng {
+    width: 4.7rem;
     margin-left: 2rem;
     cursor: pointer;
+    border: none;
+    font-family: CeraPro;
+    color: var(--logo);
+    background: transparent;
 
     &:hover {
       color: var(--blue);
+      border: none;
+    }
+
+    &:focus-visible {
+      border: none;
+      outline: none;
     }
   }
 
