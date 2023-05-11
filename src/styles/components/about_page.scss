@@ -1,6 +1,10 @@
 .about {
   &__container {
     padding: 20rem 0;
+
+    &-title {
+      width: 60%;
+    }
   }
 
   h2 {
@@ -50,5 +54,14 @@
         color: white;
       }
     }
+  }
+
+  .section-subtitle {
+    font-size: inherit;
+    text-transform: unset;
+  }
+
+  .h2.section-title {
+    line-height: 2.8rem;
   }
 }
