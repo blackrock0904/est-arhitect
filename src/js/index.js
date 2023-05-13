@@ -5,7 +5,7 @@ if (isSecondLoad) {
 }
 window.scrollTo(0, 0);
 
-window.addEventListener("DOMContentLoaded", function () {
+function init () {
     const menu = document.getElementById("menu")
     if (menu) {
         menu.addEventListener("click", (e) => {
@@ -32,14 +32,16 @@ window.addEventListener("DOMContentLoaded", function () {
         centerPadding: "100px",
         slidesToShow: 1,
         slidesToScroll: 1,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2000,
         infinite: true,
         dots: false,
         nextArrow: $(".portfolio__btn-right"),
         prevArrow: $(".portfolio__btn-left"),
     });
-})
+}
+
+init()
 
 function initAnimation() {
     const container = document.getElementById("section-hero");
